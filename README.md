@@ -1,65 +1,22 @@
-# vscode-ImageOptimizer README
+# vscode-ImageOptimizer
 
-This is the README for your extension "vscode-ImageOptimizer". After writing up a brief description, we recommend including the following sections.
+[![Build status](https://ci.appveyor.com/api/projects/status/ju1to90vscseio43?svg=true)](https://ci.appveyor.com/project/tylerbhughes/vscode-imageoptimizer)
+
+--------------------------------
+
+Uses industry standard tools to optimize any JPEG, PNG
+and Gifs - including animated Gifs. It can do both lossy
+and lossless optimization.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Adds a right-click menu to any folder and image in Solution Explorer
+that let's you automatically optimize all PNG, GIF and JPEG files
+in that folder. 
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Optimizes PNGs (uses Zopfli compression)
+- Optimizes GIFs
+- Optimizes animated GIFs
+- Optimizes JPGs (uses MozJPEG)
+- Works on single images files or entire folders
+- Copy any image as base64 dataURI to clipboard
