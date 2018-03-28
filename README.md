@@ -2,6 +2,8 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/ju1to90vscseio43?svg=true)](https://ci.appveyor.com/project/tylerbhughes/vscode-imageoptimizer)
 
+A port of the Visual Studio extension ImageOptimizer for the VS Code editor. 
+
 --------------------------------
 
 Uses industry standard tools to optimize any JPEG, PNG
