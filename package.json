@@ -1,5 +1,5 @@
 {
-    "name": "vscode-ImageOptimizer",
+    "name": "vscode-imageoptimizer",
     "displayName": "vscode-ImageOptimizer",
     "description": "A port of the Visual Studio extension ImageOptimizer for the VS Code editor.",
     "version": "0.0.1",
@@ -11,14 +11,20 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.ImageOptimizer"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+            "command": "extension.ImageOptimizer",
+            "title": "Image Optimizer"
+        }],
+        "menus": {
+            "explorer/context": [{
+                "command": "extension.ImageOptimizer",
+                "group": "7_modification"
+          }]
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
