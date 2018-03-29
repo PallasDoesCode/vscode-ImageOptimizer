@@ -11,19 +11,27 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.ImageOptimizer"
+        "onCommand:imageOptimizer.losslessOptimization",
+        "onCommand:imageOptimizer.lossyOptimization"
     ],
-    "main": "./extension",
+    "main": "./src/extension",
     "contributes": {
         "commands": [{
-            "command": "extension.ImageOptimizer",
-            "title": "Image Optimizer"
-        }],
+                "command": "imageOptimizer.losslessOptimization",
+                "title": "Lossless Optimization"
+            }, {
+                "command": "imageOptimizer.lossyOptimization",
+                "title": "Lossy Optimization"
+            }],
         "menus": {
             "explorer/context": [{
-                "command": "extension.ImageOptimizer",
-                "group": "7_modification"
-          }]
+                    "command": "imageOptimizer.losslessOptimization",
+                    "group": "7_modification"
+                }, {
+                    "command": "imageOptimizer.lossyOptimization",
+                    "group": "7_modification"
+                }
+            ]
         }
     },
     "scripts": {
